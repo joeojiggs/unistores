@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { Plugins } from '@capacitor/core';
+import { ModalController } from '@ionic/angular';
+const { Network, Toast } = Plugins;
 @Component({
   selector: 'app-login-modal',
   templateUrl: './login-modal.page.html',
