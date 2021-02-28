@@ -81,7 +81,6 @@ export class HomePage  implements OnInit{
   }
 
   openEnd() {
-    this.menu.enable(true, 'end');
     this.menu.open('end');
   }
 
