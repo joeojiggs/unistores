@@ -26,7 +26,7 @@ export class LoginModalPage implements OnInit {
     });
   }
 
-  async logisticsSignup(){
+  async logistics(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
