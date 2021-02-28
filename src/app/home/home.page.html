@@ -1,0 +1,132 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="text-success" style="text-align: center;">
+      Unistores
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button  color="success">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+    <ion-button  color="success">
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-button slot="primary" color="success">SIGN UP</ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Unistores</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column" style="margin-left: 10px; margin-right: 10px;">
+
+  <div id="container-fluid">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4" >
+      <h1 class="h5 mb-0" style="text-align: center; color: #09194F; margin-top: 10px;">TASK DONE WITH EASE</h1>
+    </div>
+
+      <!-- Content Row -->
+      <div class="row">
+        
+
+        <!-- Content Column -->
+        <div class="col-lg-6 mb-4">
+          <div style="text-align: center; padding-bottom: 20px;" >
+            <img src="./assets/img/vector.png" width="100%" height="" />
+          </div>
+          
+           <!-- Color System -->
+           <div class="row">
+
+            <div class="col mb-4">
+              <div class="card bg-success text-white shadow">
+                <ion-buttons>
+                <ion-button (click)= "student()"style="height: 100%; width: 100%;" >
+                <!--<a [routerLink]="['/student']">-->
+                <div class="card-head text-center">
+                  <img src="./assets/img/logistics.png" width="" height="100px" />
+                  <br>
+                  <br>
+                  <dt style="color:aliceblue">LOGISTICS</dt>
+                  <div class="text-white-50 small">Send a package</div>
+                  <br>
+                </div>
+              <!--</a>-->
+              </ion-button>
+              </ion-buttons>
+              </div>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col mb-4">
+              <div class="card bg-success text-white shadow">
+                <ion-buttons>
+                <ion-button (click)= "teach()"style="height: 100%; width: 100%;" >
+                <!--<a [routerLink]="['/math']">-->
+                <div class="card-head text-center">
+                  <img src="./assets/img/errand.png" width="" height="100px" >
+                  <br>
+                  <br>
+                  <dt style="color:aliceblue">ERRAND</dt>
+                  <div class="text-white-50 small">Get task done</div>
+                  <br>
+                </div>
+              <!--</a>-->
+            </ion-button>
+          </ion-buttons>
+              </div>
+            </div>
+            
+            <div class="w-100"></div>
+
+            <div class="col mb-4">
+              <div class="card bg-success text-white shadow">
+              <ion-buttons>
+                <ion-button (click)= "staff()"style="height: 100%; width: 100%;" >
+                <!--<a [routerLink]="['/basic-sci']">-->
+                  <div class="card-head text-center"> 
+                    <img src="./assets/img/ecommerce.png" width="" height="100px" >
+                    <br>
+                    <br>
+                    <dt style="color:aliceblue">ECOMMERCE</dt>
+                    <div class="text-white-50 small">Make a purchase</div>
+                    <br>
+                  </div>
+                <!--</a>-->
+              </ion-button>
+              </ion-buttons>
+              </div>
+            </div>
+
+           
+
+          
+
+
+
+
+
+           </div>
+
+        </div>
+
+      </div>
+  </div>
+
+
+  </div>
+  <br><br>
+  
+</ion-content >

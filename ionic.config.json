@@ -1,0 +1,7 @@
+{
+  "name": "unistores",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
