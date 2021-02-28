@@ -8,7 +8,7 @@ const { Network, Toast } = Plugins;
 })
 export class LogisticsPage implements OnInit {
 
-  constructor() { }
+/*  constructor() { }
 
   ngOnInit() {
     let ref = this;
