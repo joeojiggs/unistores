@@ -65,7 +65,7 @@ export class HomePage  implements OnInit{
     }
   }
 
-  async admin(){
+  async info(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
