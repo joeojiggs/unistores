@@ -20,6 +20,45 @@ export class LoginModalPage implements OnInit {
     });
   }
 
-  
+  async logisticsSignup(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/logistics-signup");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+    
+  }
+
+  async errandSignup(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/errand-signup");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async ecommerceSignup(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/ecommerce-signup");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async userSignup(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/user-signup");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
 
 }
