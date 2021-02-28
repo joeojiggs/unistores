@@ -58,6 +58,14 @@ export class SignupModalPage implements OnInit {
     }
   }
 
-  
+  async ecommercSignup(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/ecommerce-signup");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
 
 }
