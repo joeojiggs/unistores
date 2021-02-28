@@ -78,7 +78,6 @@ export class HomePage  implements OnInit{
   openFirst() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
-    this.menu.c
   }
 
 }
