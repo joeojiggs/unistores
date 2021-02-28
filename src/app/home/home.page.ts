@@ -54,7 +54,7 @@ export class HomePage  implements OnInit{
     }
   }
 
-  async staff(){
+  async ecommerce(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
