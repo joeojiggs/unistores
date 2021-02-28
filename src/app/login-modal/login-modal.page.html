@@ -10,5 +10,43 @@
 </ion-header>
 
 <ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Sign Up to Deliver <ion-icon name="bicycle"></ion-icon>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-item (click) ="logisticsSignup()" class="ion-activated">
+      <ion-icon name="cube" slot="start"></ion-icon>
+      <ion-label>Logistics</ion-label>
+    </ion-item>
+  
+    <ion-item (click) ="errandSignup();">
+      <ion-icon name="list" slot="start"></ion-icon>
+      <ion-label>Errand</ion-label>
+    </ion-item>
+  
+    <ion-item (click) ="ecommerceSignup()" class="ion-activated">
+      <ion-icon name="cart" slot="start"></ion-icon>
+      <ion-label>Card Button Item 1 activated</ion-label>
+    </ion-item>
+  <br>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Sign Up to Use Our Service <ion-icon name="people"></ion-icon>
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-item (click) ="userSignup();">
+      <ion-icon name="person-add" slot="start"></ion-icon>
+      <ion-label>Create Account</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      Create a User Account with Unistores.
+    </ion-card-content>
+  </ion-card> 
 
 </ion-content>
+
