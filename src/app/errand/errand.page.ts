@@ -43,5 +43,6 @@ export class ErrandPage implements OnInit {
   goHome() {
     window.location.assign("/home");
   }
+  
 
 }
