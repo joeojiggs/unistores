@@ -38,7 +38,7 @@ export class SignupModalPage implements OnInit {
     
   }
 
-  async errandSignuo(){
+  async errandSignup(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
