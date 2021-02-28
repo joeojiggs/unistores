@@ -1,4 +1,4 @@
-/*import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-signup-modal',
@@ -11,16 +11,5 @@ export class SignupModalPage implements OnInit {
 
   ngOnInit() {
   }
-
-}
-*/
-import { Component, Input } from '@angular/core';
-
-@Component({
-  selector: 'modal-page',
-})
-export class ModalPage {
-
-  constructor() {}
 
 }
