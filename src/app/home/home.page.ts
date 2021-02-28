@@ -3,7 +3,8 @@ import { Plugins } from '@capacitor/core';
 import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
-import { Signup-modalPa }
+import { Signup-modalPaimport { SignupModalPage } from '../signup-modal/signup-modal.page';
+SignupModalPage }
 const { Browser, Network, Toast } = Plugins;
 
 
