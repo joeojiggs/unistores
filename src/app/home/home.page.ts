@@ -13,7 +13,7 @@ const { Browser, Network, Toast } = Plugins;
 })
 export class HomePage  implements OnInit{
 
-  constructor(private router: Router, private menu: MenuController) { }
+  constructor(private router: Router, private menu: MenuController, public modalController: ModalController) { }
 
   async ngOnInit(  ) {
     let status = await Network.getStatus();
