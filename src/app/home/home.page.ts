@@ -11,8 +11,67 @@ const { Browser, Network, Toast } = Plugins;
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage  implements OnInit{
 
-  constructor() {}
+  constructor(private router: Router) { }
+
+  async ngOnInit(  ) {
+    let status = await Network.getStatus();
+
+    if (status.connected === true){
+      this.showToast("Internet Connected");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+
+
+  }
+
+  showToast(msg){
+    Toast.show({text:msg,duration: 'long'})
+  }
+
+  
+
+  async student(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/student");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+    
+  }
+
+  async teach(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/teach");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async staff(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/staff");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async admin(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/admin");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
 
 }
