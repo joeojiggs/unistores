@@ -7,7 +7,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class LoginModalPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {
   }
