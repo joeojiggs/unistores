@@ -26,5 +26,8 @@ export class ErrandPage implements OnInit {
       }
     });
   }
+  showToast(msg){
+    Toast.show({text:msg,duration: 'long'})
+  }
 
 }
