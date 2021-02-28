@@ -10,7 +10,7 @@ const { Network, Toast } = Plugins;
 })
 export class ErrandPage implements OnInit {
 
-  constructor(private menu: MenuController) { }
+  constructor(private menu: MenuController, public modalController: ModalController) { }
 
   ngOnInit() {
     let ref = this;
