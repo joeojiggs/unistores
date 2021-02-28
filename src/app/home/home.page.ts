@@ -87,7 +87,7 @@ export class HomePage  implements OnInit{
     window.location.assign("/home");
   }
 
-  async presentModal() {
+  async signModal() {
     const modal = await this.modalController.create({
       component: SignupModalPage,
       cssClass: 'my-custom-class'
