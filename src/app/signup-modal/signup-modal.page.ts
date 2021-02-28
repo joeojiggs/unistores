@@ -13,3 +13,5 @@ export class SignupModalPage implements OnInit {
   }
 
 }
+*/
+
