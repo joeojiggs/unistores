@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Plugins } from '@capacitor/core';
+import { Router } from '@angular/router';
+
 
 
 @Component({
