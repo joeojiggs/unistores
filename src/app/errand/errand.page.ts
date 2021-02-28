@@ -34,7 +34,47 @@ export class ErrandPage implements OnInit {
     Toast.show({text:msg,duration: 'long'})
   }
 
-  
+  async logistics(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/logistics");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+    
+  }
+
+  async errand(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/errand");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async ecommerce(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/ecommerce");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async info(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/info-center");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
 
   openMenu() {
     this.menu.enable(true, 'menu');
