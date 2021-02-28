@@ -27,4 +27,35 @@ export class SignupModalPage implements OnInit {
     });
   }
 
+  async logistics(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/logistics");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+    
+  }
+
+  async errand(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/errand");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
+  async ecommerce(){
+    let status = await Network.getStatus();
+
+    if (status.connected === true ){
+      window.location.assign("/ecommerce");
+    }else{
+      this.showToast("No Internet Connectivity");
+    }
+  }
+
 }
