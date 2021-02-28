@@ -28,7 +28,6 @@ export class SignupModalPage implements OnInit {
   }
 
   async logisticsSignup(){
-    this.showToast("No Internet Connectivity");
     let status = await Network.getStatus();
 
     if (status.connected === true ){
