@@ -1,0 +1,13 @@
+{
+  "appId": "com.ojtechnologiesltd.unistores",
+  "appName": "unistores",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
