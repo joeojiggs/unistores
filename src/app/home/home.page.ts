@@ -87,4 +87,12 @@ export class HomePage  implements OnInit{
     window.location.assign("/home");
   }
 
+  async presentModal() {
+    const modal = await this.modalController.create({
+      component: ModalPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+
 }
