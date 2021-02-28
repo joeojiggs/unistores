@@ -8,7 +8,7 @@ const { Network, Toast } = Plugins;
 })
 export class InfoCenterPage implements OnInit {
 
-  constructor() { }
+  constructor(private menu: MenuController, public modalController: ModalController) { }
 
   ngOnInit() {
     let ref = this;
