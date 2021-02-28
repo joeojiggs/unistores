@@ -80,7 +80,7 @@ export class HomePage  implements OnInit{
     this.menu.open('first');
   }
 
-  closeFirst() {
+  closeMenu() {
 
   }
 
