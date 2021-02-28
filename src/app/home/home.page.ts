@@ -6,7 +6,6 @@ import { ModalController } from '@ionic/angular';
 import { SignupModalPage } from '../signup-modal/signup-modal.page';
 const { Browser, Network, Toast } = Plugins;
 
-
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
