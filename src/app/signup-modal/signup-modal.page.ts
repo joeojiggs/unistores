@@ -16,7 +16,7 @@ export class SignupModalPage implements OnInit {
   dismiss() {
     // using the injected ModalController this page
     // can "dismiss" itself and optionally pass back data
-    this.modalCtrl.dismiss({
+    this.modalCo.dismiss({
       'dismissed': true
     });
   }
