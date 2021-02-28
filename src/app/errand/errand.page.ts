@@ -30,6 +30,17 @@ export class ErrandPage implements OnInit {
     Toast.show({text:msg,duration: 'long'})
   }
 
-  
+  openMenu() {
+    this.menu.enable(true, 'menu');
+    this.menu.open('menu');
+  }
+
+  closeMenu() {
+    this.menu.close('menu');
+  }
+
+  goHome() {
+    window.location.assign("/home");
+  }
 
 }
