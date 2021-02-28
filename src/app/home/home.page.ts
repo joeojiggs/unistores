@@ -33,7 +33,7 @@ export class HomePage  implements OnInit{
 
   
 
-  async student(){
+  async logisct(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
