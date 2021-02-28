@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Plugins } from '@capacitor/core';
+
 import { ModalController } from '@ionic/angular';
 const { Network, Toast } = Plugins;
 
