@@ -1,9 +1,90 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>ecommerce-login</ion-title>
+    <ion-title class="text-success" style="text-align: center;">
+      Unistores
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click) = "openMenu()" color="success" >
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  <ion-buttons slot="secondary">
+    <ion-button (click) = "loginModal()"  color="success">
+      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+    <ion-button (click) = "signupModal()" slot="primary" color="success">SIGN UP</ion-button>
+    
   </ion-toolbar>
 </ion-header>
 
+<ion-menu side="start" menuId="menu" contentId="main">
+  <ion-header>
+    <ion-toolbar color="success">
+      <ion-buttons slot="primary">
+        <ion-button (click) = "closeMenu()" >
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item style="color: #09194F;">
+        <ion-buttons style="width: 100%; height: 100%;">
+          <ion-button (click)= "goHome()" >
+            <ion-icon name="home"></ion-icon>
+            <span style="margin-left: 20px;"> Home</span> 
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item style="color: #09194F;">
+        <ion-buttons style="width: 100%; height: 100%;">
+          <ion-button (click)= "logistics()" >
+            <ion-icon name="cube"></ion-icon>
+            <span style="margin-left: 20px;"> Request Logistics</span>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item style="color: #09194F;">
+        <ion-buttons style="width: 100%; height: 100%;">
+          <ion-button (click)= "errand()" >
+            <ion-icon name="list"></ion-icon>
+            <span style="margin-left: 20px;"> Request Errand </span>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item style="color: #09194F;">
+        <ion-buttons style="width: 100%; height: 100%;">
+          <ion-button (click)= "ecommerce()" >
+            <ion-icon name="cart"></ion-icon>
+            <span style="margin-left: 20px;"> Make Purchase </span>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item style="color: #09194F;">
+        <ion-buttons style="width: 100%; height: 100%;">
+          <ion-button (click)= "info()">
+            <ion-icon name="information-circle"></ion-icon>
+            <span style="margin-left: 20px;"> Info Center </span>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
 <ion-content>
+  <!--
+  <iframe src="https://unistores.com.ng/errand/" class="embed-responsive-item" title="Unistores Errand Services" allowfullscreen="true" width="100%" height="100%" class="me" onload="closeProgressIndicator()" id="bt"></iframe>
+  -->
+  <div class="embed-responsive" style="width: 100%; height: 100%;">
+    <iframe src="https://unistores.com.ng/ecommerce/" class="embed-responsive-item" title="Unistores Ecommerce Services" allowfullscreen="true" width="100%" height="100%" class="me" onload="closeProgressIndicator()" id="bt"></iframe>
+  </div>
 
 </ion-content>
