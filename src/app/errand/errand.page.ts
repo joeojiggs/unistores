@@ -43,6 +43,21 @@ export class ErrandPage implements OnInit {
   goHome() {
     window.location.assign("/home");
   }
-  
+
+  async signupModal() {
+    const modal = await this.modalController.create({
+      component: SignupModalPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+
+  async loginModal() {
+    const modal = await this.modalController.create({
+      component: LoginModalPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
 
 }
