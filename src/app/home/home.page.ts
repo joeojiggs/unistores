@@ -75,13 +75,13 @@ export class HomePage  implements OnInit{
     }
   }
 
-  openFirst() {
+  openMenu() {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
 
   closeFirst() {
-    
+
   }
 
 }
