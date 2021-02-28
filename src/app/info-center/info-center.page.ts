@@ -33,4 +33,6 @@ export class InfoCenterPage implements OnInit {
     Toast.show({text:msg,duration: 'long'})
   }
 
+  
+
 }
