@@ -85,7 +85,7 @@ export class HomePage  implements OnInit{
   }
 
   goHome() {
-    window.l
+    window.location.a
   }
 
 }
