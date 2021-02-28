@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalC }
+import { ModalController }
 
 @Component({
   selector: 'app-signup-modal',
