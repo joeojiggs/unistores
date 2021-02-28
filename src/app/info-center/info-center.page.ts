@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Plugins } from '@capacitor/core';
+const { Network, Toast } = Plugins;
 @Component({
   selector: 'app-info-center',
   templateUrl: './info-center.page.html',
