@@ -3,7 +3,7 @@ import { Plugins } from '@capacitor/core';
 import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
-import { Modal }
+import {  }
 const { Browser, Network, Toast } = Plugins;
 
 
