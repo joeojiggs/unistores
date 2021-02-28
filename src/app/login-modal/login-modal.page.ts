@@ -57,7 +57,7 @@ export class LoginModalPage implements OnInit {
     }
   }
 
-  async userSignup(){
+  async userLogin(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
