@@ -85,7 +85,7 @@ export class HomePage  implements OnInit{
   }
 
   goHome() {
-    win
+    window.
   }
 
 }
