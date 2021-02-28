@@ -84,4 +84,6 @@ export class HomePage  implements OnInit{
     this.menu.close('menu');
   }
 
+  
+
 }
