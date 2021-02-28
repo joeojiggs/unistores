@@ -96,4 +96,12 @@ export class HomePage  implements OnInit{
     return await modal.present();
   }
 
+  async signupModal() {
+    const modal = await this.modalController.create({
+      component: SignupModalPage,
+      cssClass: 'my-custom-class'
+    });
+    return await modal.present();
+  }
+
 }
