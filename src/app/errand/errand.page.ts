@@ -30,4 +30,6 @@ export class ErrandPage implements OnInit {
     Toast.show({text:msg,duration: 'long'})
   }
 
+  
+
 }
