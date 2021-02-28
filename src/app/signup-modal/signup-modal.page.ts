@@ -31,7 +31,7 @@ export class SignupModalPage implements OnInit {
     let status = await Network.getStatus();
 
     if (status.connected === true ){
-      window.location.assign("/logistics-sign");
+      window.location.assign("/logistics-signup");
     }else{
       this.showToast("No Internet Connectivity");
     }
