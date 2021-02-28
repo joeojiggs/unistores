@@ -76,8 +76,8 @@ export class HomePage  implements OnInit{
   }
 
   openMenu() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
+    this.menu.enable(true, 'menu');
+    this.menu.open('menu');
   }
 
   closeMenu() {
