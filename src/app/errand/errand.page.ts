@@ -34,6 +34,8 @@ export class ErrandPage implements OnInit {
     Toast.show({text:msg,duration: 'long'})
   }
 
+  
+
   openMenu() {
     this.menu.enable(true, 'menu');
     this.menu.open('menu');
