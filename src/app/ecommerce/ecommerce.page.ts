@@ -13,7 +13,7 @@ const { Network, Toast } = Plugins;
 })
 export class EcommercePage implements OnInit {
 
-  constructor() { }
+  constructor(private menu: MenuController, public modalController: ModalController) { }
 
   ngOnInit() {
     let ref = this;
