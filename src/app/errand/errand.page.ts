@@ -12,6 +12,19 @@ export class ErrandPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    let ref = this;
+    Network.addListener("networkStatusChange",function 
+    (val)
+    {
+      if (val.connected){
+        ref.showToast("Internet Connected");
+
+      }
+      else{
+        ref.showToast("Internet Disconnected");
+        window.location.assign("/home");
+      }
+    });
   }
 
 }
