@@ -15,7 +15,9 @@ export class SignupModalPage implements OnInit {
   ngOnInit() {
   }
 
-  
+  showToast(msg){
+    Toast.show({text:msg,duration: 'long'})
+  }
 
   dismiss() {
     // using the injected ModalController this page
