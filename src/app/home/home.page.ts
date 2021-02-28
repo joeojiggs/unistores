@@ -81,7 +81,7 @@ export class HomePage  implements OnInit{
   }
 
   closeMenu() {
-    this.menu.close('menu')
+    this.menu.close('menu');
   }
 
 }
