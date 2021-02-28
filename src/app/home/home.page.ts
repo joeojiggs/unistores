@@ -89,7 +89,7 @@ export class HomePage  implements OnInit{
 
   async presentModal() {
     const modal = await this.modalController.create({
-      component: Page,
+      component: SPage,
       cssClass: 'my-custom-class'
     });
     return await modal.present();
