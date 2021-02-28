@@ -58,7 +58,7 @@ export class SignupModalPage implements OnInit {
     }
   }
 
-  async ecommercSignup(){
+  async userSignup(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
