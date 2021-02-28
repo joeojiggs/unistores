@@ -37,7 +37,7 @@ export class HomePage  implements OnInit{
     let status = await Network.getStatus();
 
     if (status.connected === true ){
-      window.location.assign("/student");
+      window.location.assign("/logistics");
     }else{
       this.showToast("No Internet Connectivity");
     }
