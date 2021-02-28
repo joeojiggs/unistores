@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { ModalController } from '@ionic/angular';
 import { Signup-modalPaimport { SignupModalPage } from '../signup-modal/signup-modal.page';
-SignupModal
 const { Browser, Network, Toast } = Plugins;
 
 
