@@ -41,7 +41,7 @@ export class LoginModalPage implements OnInit {
     let status = await Network.getStatus();
 
     if (status.connected === true ){
-      window.location.assign("/errand-signup");
+      window.location.assign("/errand-login");
     }else{
       this.showToast("No Internet Connectivity");
     }
