@@ -44,7 +44,7 @@ export class HomePage  implements OnInit{
     
   }
 
-  async teach(){
+  async errand(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
