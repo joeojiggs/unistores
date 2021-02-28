@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class SignupModalPage implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {
   }
