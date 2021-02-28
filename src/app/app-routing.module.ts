@@ -55,6 +55,18 @@ const routes: Routes = [
     path: 'user-login',
     loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
   },
+  {
+    path: 'info-center',
+    loadChildren: () => import('./info-center/info-center.module').then( m => m.InfoCenterPageModule)
+  },
+  {
+    path: 'signup-modal',
+    loadChildren: () => import('./signup-modal/signup-modal.module').then( m => m.SignupModalPageModule)
+  },
+  {
+    path: 'login-modal',
+    loadChildren: () => import('./login-modal/login-modal.module').then( m => m.LoginModalPageModule)
+  },
 ];
 
 @NgModule({
