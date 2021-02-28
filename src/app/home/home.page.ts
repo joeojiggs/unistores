@@ -80,13 +80,4 @@ export class HomePage  implements OnInit{
     this.menu.open('first');
   }
 
-  openEnd() {
-    this.menu.open('end');
-  }
-
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
-  }
-
 }
