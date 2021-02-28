@@ -37,7 +37,7 @@ export class LoginModalPage implements OnInit {
     
   }
 
-  async errandSignup(){
+  async errandLogin(){
     let status = await Network.getStatus();
 
     if (status.connected === true ){
