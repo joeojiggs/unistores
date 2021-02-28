@@ -28,7 +28,6 @@ export class SignupModalPage implements OnInit {
   }
 
   async logisticsSignup(){
-    window.location.assign("/logistics");
     let status = await Network.getStatus();
 
     if (status.connected === true ){
