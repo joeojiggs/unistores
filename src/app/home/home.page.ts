@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Plugins } from '@capacitor/core';
 import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
+
 const { Browser, Network, Toast } = Plugins;
 
 
